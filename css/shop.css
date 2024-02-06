@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC',sans-serif;
+}
+/* Header */
+.main-header{
+    background-color: rgb(252, 252, 252);
+}
+.main-header .container{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.main-header .logo{
+    width: 100px;
+}
+.main-header .logo img{
+    width: 150%;
+    vertical-align: middle;
+    border: 2px solid#7d7d7d;
+    animation: spin 5s linear;
+}
+@keyframes spin {
+    0% {
+    transform: rotate(-0deg);
+    }
+    0% {
+    transform: rotate(-10deg);
+    }
+}
+.main-header .logo img:hover{
+    transform: translateY(-5px);
+}
+.main-header .main-nav{
+    margin:auto;
+    display: flex;
+}
+.main-header .main-nav a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 1em;
+    position: relative;
+    transform: translateY(0px);
+    transition: .3s;
+}
+.main-header .main-nav a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid#000000;
+    transition: .3s;
+}
+.main-header .main-nav a:hover:after{
+    left: 0%;
+    right: 0%;
+}
+.main-header .main-nav a:hover{
+    transform: translateY(-5px);
+}
+.main-nav li{
+    content: '>';
+    color: rgb(0, 0, 0);
+}
+.main-nav a:hover{
+    color:rgb(126, 126, 125)
+}
+ul .drop-down-menu{
+    display: inline-block;
+    font-family: 'Open Sand',Arial,sans-serif;
+    font-size: 12px;
+}
+ul.drop-down-menu li{
+    padding: relative;
+    white-space: nowrap;
+    font-size: 17px;
+    margin-top: -7px;
+}
+ul .drop-down-menu > li:last-child{
+    border-right: none;
+}
+ul .drop-down-menu > li{
+    float:left;
+}
+ul.drop-down-menu a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 20spx;
+    text-decoration: none;
+    line-height: 35px;
+    border-radius: 5px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: #989898;
+    color: #fff;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    color: #000000;
+}
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+.shoptop a {
+    display: flex;
+    align-items: center; /* 在垂直方向上居中对齐 */
+    justify-content: center; /* 在水平方向上居中对齐 */
+    background-color: #989898;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0 350px;
+}
+.shoptop a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transform: translateY(-5px);
+}
+.oneshop img{
+    padding-top: 40px;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 0 380px;
+}
+.card .btn:hover {
+    transform: translateY(-5px);
+}
+.row{
+    align-items: center;
+    justify-content: center;
+}
+.row .card:hover{
+    transform: translateY(-5px);
+}
+.row .card{
+    transition: transform 0.3s ease;
+    border-radius: 5%;
+    margin: 0 20px; /* 調整左右間距 */
+    margin-top: 50px;
+}
+.row .shoptop{
+    margin-top: 50px;
+}
+.row .shoptop h2{
+    margin-left: 40%;
+}
+.row img{
+    width: 100px;
+}
+.card img{
+    width: 250px;
+    border-radius: 5px;
+}
+.card-body{
+    margin: 0 15px;
+}
+.col{
+    padding: 0 800px;
+}
+.custom-row .col {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* 设置按钮图标的样式，可以使用自定义图标或修改现有图标的样式 */
+    /* 例如，修改图标的颜色和大小 */
+    font-size: 30px; /* 设置图标的大小为30像素 */
+    color: #d70808; /* 设置图标的颜色 */
+    position: relative;
+}
+
+
